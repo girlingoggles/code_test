@@ -65,10 +65,15 @@ This view will need to query for the saved FilledQuestionnaire entries, then do 
 ### Answer some questions
 
 #### Explain how the config for this app works, and why when using docker compose might this be a good way to configure rather than a config file
+Looks for appropriate credentials and their locations, who is allowed. Docker compose is used for apps that need/use multiple containers, so it looks like you can have one file in stead of several.
+
 
 #### Explain why the startup_check.py file exists and what it does
+It sets up the container with the pre-set requirements, every time, so you know it will have the correct/same tools and tool version. It lets you know if there are certain changes that need to be migrated over as well, of you're all set.
+
 
 #### Explain what the entrypoint.sh file does
+Runs several commands to get the container up and running and- if there are no issues  on startup- runs Gunicorn.
 
 
 ## Testing and evaluation
