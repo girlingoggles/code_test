@@ -9,16 +9,103 @@
       These are the results for the inane questionnaire.
     </p>
 
-    <h2 class="index-count">Results</h2>
-    <h2 class="index-count">Months</h2>
-      {{ months }}
-    <h2 class="index-count">Days</h2>
-      {% for day in FilledQuestionnaire %}
-      Day:{{ days }}
-      {% endfor %}
-    <h2 class="index-count">Fav day related to month</h2>
+    <h3 class="index-count">Months</h3>
+    <ul>
+      <li>January: {{ months.0 }} ( {{ months_percent.0 }}%)</li>
+    </ul>
+    <ul>
+      <li>February: {{ months.1 }} ( {{ months_percent.1 }}%)</li>
+    </ul>
+    <ul>
+      <li>March: {{ months.2 }} ( {{ months_percent.2 }}%)</li>
+    </ul>
+    <ul>
+      <li>April: {{ months.3 }} ( {{ months_percent.3 }}%)</li>
+    </ul>
+    <ul>
+      <li>May: {{ months.4 }} ( {{ months_percent.4 }}%)</li>
+    </ul>
+    <ul>
+      <li>June: {{ months.5 }} ( {{ months_percent.5 }}%)</li>
+    </ul>
+    <ul>
+      <li>July: {{ months.6 }} ( {{ months_percent.6 }}%)</li>
+    </ul>
+    <ul>
+      <li>August: {{ months.7 }} ( {{ months_percent.7 }}%)</li>
+    </ul>
+    <ul>
+      <li>September: {{ months.8 }} ( {{ months_percent.8 }}%)</li>
+    </ul>
+    <ul>
+      <li>October: {{ months.9 }} ( {{ months_percent.9 }}%)</li>
+    </ul>
+    <ul>
+      <li>November: {{ months.10 }} ( {{ months_percent.10 }}%)</li>
+    </ul>
+    <ul>
+      <li>December: {{ months.11 }} ( {{ months_percent.11 }}%)</li>
+    </ul>
+    <h3 class="index-count">Days</h3>
+    <ul>
+      <li>Monday: {{ days.0 }} ( {{ days_percent.0 }}%)</li>
+    </ul>
+    <ul>
+      <li>Tuesday: {{ days.1 }} ( {{ days_percent.1 }}%)</li>
+    </ul>
+    <ul>
+      <li>Wednesday: {{ days.2 }} ( {{ days_percent.2 }}%)</li>
+    </ul>
+    <ul>
+      <li>Thursday: {{ days.3 }} ( {{ days_percent.3 }}%)</li>
+    </ul>
+    <ul>
+      <li>Friday: {{ days.4 }} ( {{ days_percent.4 }}%)</li>
+    </ul>
+    <ul>
+      <li>Saturday: {{ days.5 }} ( {{ days_percent.5 }}%)</li>
+    </ul>
+    <ul>
+      <li>Sunday: {{ days.6 }} ( {{ days_percent.6 }}%)</li>
+    </ul>
+    <h3 class="index-count">Fav day related to month</h3>
+    <ul>
+      <li>January: {{ months_fav.0 }}</li>
+    </ul>
+    <ul>
+      <li>February: {{ months_fav.1 }}</li>
+    </ul>
+    <ul>
+      <li>March: {{ months_fav.2 }}</li>
+    </ul>
+    <ul>
+      <li>April: {{ months_fav.3 }}</li>
+    </ul>
+    <ul>
+      <li>May: {{ months_fav.4 }}</li>
+    </ul>
+    <ul>
+      <li>June: {{ months_fav.5 }}</li>
+    </ul>
+    <ul>
+      <li>July: {{ months_fav.6 }}</li>
+    </ul>
+    <ul>
+      <li>August: {{ months_fav.7 }}</li>
+    </ul>
+    <ul>
+      <li>September: {{ months_fav.8 }}</li>
+    </ul>
+    <ul>
+      <li>October: {{ months_fav.9 }}</li>
+    </ul>
+    <ul>
+      <li>November: {{ months_fav.10 }}</li>
+    </ul>
+    <ul>
+      <li>December: {{ months_fav.11 }}</li>
     <p>
-      <a href="/index.html" class="btn btn-primary">Home</a>
+      <a href="/" class="btn btn-primary">Home</a>
     </p>
   </div>
 </div>

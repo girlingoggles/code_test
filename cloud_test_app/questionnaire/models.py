@@ -26,9 +26,10 @@ class FilledQuestionnaire(models.Model):
         ('6', 'Saturday'),
         ('7', 'Sunday'),
     )
+
     month = models.CharField( 
         choices=MONTH_CHOICES,
-        max_length=2,
+        max_length=3,
         verbose_name='favourite month',
     )
     day = models.CharField( 
