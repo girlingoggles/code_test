@@ -2,6 +2,7 @@ from __future__ import absolute_import, unicode_literals
 
 from django.conf import settings
 from django.conf.urls import include, url
+from django.urls import path
 
 
 CACHE_TIME = getattr(settings, 'ROBOTS_CACHE_TIMEOUT', 60*60)

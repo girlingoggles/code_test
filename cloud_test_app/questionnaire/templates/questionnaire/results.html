@@ -1,0 +1,25 @@
+{% extends "questionnaire/base.html" %}
+
+{% block body_content %}
+<div class="container main-body">
+
+  <div class="index-main">
+    <h1 class="index-heading">Results</h1>
+    <p>
+      These are the results for the inane questionnaire.
+    </p>
+
+    <h2 class="index-count">Results</h2>
+    <h2 class="index-count">Months</h2>
+      {{ months }}
+    <h2 class="index-count">Days</h2>
+      {% for day in FilledQuestionnaire %}
+      Day:{{ days }}
+      {% endfor %}
+    <h2 class="index-count">Fav day related to month</h2>
+    <p>
+      <a href="/index.html" class="btn btn-primary">Home</a>
+    </p>
+  </div>
+</div>
+{% endblock %}

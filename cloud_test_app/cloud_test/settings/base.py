@@ -8,6 +8,9 @@ import os
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 PROJECT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BASE_DIR = os.path.dirname(PROJECT_DIR)
+#Do I need these?
+DATABASE = os.path.join(BASE_DIR, 'db.sqlite3')
+PAGE = os.path.join(PROJECT_DIR, 'templates')
 
 # Application definition
 
@@ -24,6 +27,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.sitemaps',
+    'test_site',
 ]
 
 MIDDLEWARE = [
